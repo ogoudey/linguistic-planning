@@ -6,7 +6,7 @@ The first intuition here is that human language (HL) input should be treated as 
 
 A second angle at this project is that the cobot should have a "language of its own". Such a device is central to a cognitive architecture.
 
-HL will have almost nothing to do with the cobot. The cobot would label it as another property of humans if it were exploring its theory of humans. In [complex cobotics](https://github.com/ogoudey/complex-cobot), the cobot treats HL as input for collaboration with humans (associating the HL with function calls), that's it.
+HL will have almost nothing to do with the cobot. The cobot would label it as another property of humans if it were exploring its theory of humans. In [complex cobotics](https://github.com/ogoudey/complex-cobot), the cobot treats HL as input for collaboration with humans. It decodes the HL, and then associates it with function calls, that's all.
 
 ### Terming
 The process starts by instantiating a Communicator to "term" the input.
@@ -18,18 +18,18 @@ Next the terms of the input start to form structures. To the planning domain are
 
 In the execution of this, complex actions are carried out. Explicit planner-solve-execute cycles are replaced with structures that combine planners with states and triggers.
 
-A near-term example. The perception would be HL:
+A near-term example. The perception would be HL (an attribute of a `whisper` result):
 
-Terming:
-    term(HL)    ---perception---
-    move_index(HL, State)
-    term(State)
-    move_index(SL, Collaboration)
-    term(Collaboration)
+Terming: <br>
+    term(HL)    ---perception---<br>
+    move_index(HL, State)<br>
+    term(State)<br>
+    move_index(SL, Collaboration)<br>
+    term(Collaboration)<br>
 
-Building: 
-    merge(HL, Collaboration)
-    merge(State, Collaboration)
+Building: <br>
+    merge(HL, Collaboration)<br>
+    merge(State, Collaboration)<br>
 
 
 
