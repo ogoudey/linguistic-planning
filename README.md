@@ -13,6 +13,8 @@ On an input of (DIR, you, movetheblock), terms (labels) might be [`directionalit
 
 When merging, "DIR" and "you" combine to make, say, `self.`. Let's suppose `individual` merges again, now with `action`, and we might now have `self.move_block`. That's semantic understanding in readable form: an executable line of code.
 
+This project also tries to separate the concerns of the input from internal processes such as whatever the robot was currently doing.
+
 ### Background
 
 The first intuition here is that human language (HL) input should be treated as sequences of an external form of communication, but that given that "treatment", all behavior should stay the same.
